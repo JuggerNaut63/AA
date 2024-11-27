@@ -126,7 +126,7 @@ contract BLSSignatureAggregator is IAggregator {
     /**
      * validate signature of a single userOp
      * This method is called after EntryPoint.simulateValidation() returns an aggregator.
-     * First it validates the signature over the userOp. then it return data to be used when creating the handleOps:
+     * First it validates the signature over the userOp. then it returns data to be used when creating the handleOps:
      * @param userOp the userOperation received from the user.
      * @return sigForUserOp the value to put into the signature field of the userOp when calling handleOps.
      *    (usually empty, unless account and aggregator support some kind of "multisig"
